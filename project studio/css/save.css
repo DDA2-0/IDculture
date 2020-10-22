@@ -1,0 +1,199 @@
+/* SIDE MENU*/
+
+header > div.menu > b.btn-menu{
+      /* 눌렀을 때, 사이드 메뉴가 펼쳐지게 할 햄버거 버튼. */
+      display:block;position: absolute; right:9%;
+      padding:15px; border-radius: 50%; border: 1px solid rgb(0, 0, 0);
+      width:28px; height:28px; cursor:pointer; /* 마우스 커서가 클릭할 수 있는 모양(손가락)으로 바뀐다. 콘텐츠를 클릭할 수 있게 된다. */}
+header > div.menu > b.btn-menu > span{
+      /* 햄버거 버튼 모양을 위한 span, border top과 bottom을 주어 위 아래 선을 만들어주었다. */
+      display:block; position:absolute;
+      width: 30px; height: 20px; top:30%;
+      border-top: 2px solid #000000;
+      border-bottom: 2px solid #000000;
+      /* transition 값을 지정하여 변화할 때 자연스럽게 변하도록 함. 선 색상에 transition 적용 */
+      -webkit-transition:border-color 180ms cubic-bezier(0.455,0.030,0.515,0.955);
+      -moz-transition:border-color 180ms cubic-bezier(0.455,0.030,0.515,0.955);
+      -o-transition:border-color 180ms cubic-bezier(0.455,0.030,0.515,0.955);
+      -ms-transition:border-color 180ms cubic-bezier(0.455,0.030,0.515,0.955);
+      transition:border-color 180ms cubic-bezier(0.455,0.030,0.515,0.955)}
+.header > div.menu > b.btn-menu > span::before,.btn-menu > span::after{
+      /* 햄버거 버튼 모양을 만들기 위해 추가. 햄버거 버튼의 가운데 선으로 들어간다. */
+      content:'';display:block;position:absolute;
+      width:100%;height:0;top:-4px;
+      border-bottom:2px solid #000000;}
+/* 가운데 선 위치 지정. */
+header > div.menu > b.btn-menu span::after{transform:translateY(13px)}
+/* 마우스 hover 했을 때, 색상이 흰색으로 변하게 한다. transition 값 덕분에 자연스럽게 변함. */
+header > div.menu > b.btn-menu:hover span,.btn-menu:hover span::before,.btn-menu:hover span::after{border-color:rgb(0, 0, 0)}
+
+
+header {
+      width:100%; position: fixed; /* fixed를 사용하여 스크롤을 해도 헤더가 고정되도록 한다.*/
+      z-index:300; /* 헤더가 다른 요소 밑으로 깔리지 않게 하기 위해 z-index를 부여하여 위로 띄운다.*/
+      display: flex; text-align: center; margin-top: 30px;/* flex를 사용하여 요소들을 일렬로 배치한다.*/}
+header > div.menu > h1 > a {color: #000000; display:block; text-decoration: none; letter-spacing: 2px;font-family: 'Nanum Myeongjo', serif;}
+header > div.menu > h1 {position: absolute;left:10%; top:20px;font-size: 30px; font-weight: 700;}
+
+
+header > div.menu {position:relative; flex:1;}
+header > div.menu > h2.blind{
+      /* !important : 이전의 타입을 덮어쓴다. */
+      display:none!important; visibility:hidden!important; position:absolute;
+      margin:0; padding:0; clip:rect(0 0 0 0);
+      /*clip : absolute 또는 fixed일 때만 적용됨, 특정 부분만 보이게 한다.*/
+      pointer-events:none; /* a태그의 링크를 무효화*/}
+#btn-menu {
+      width: 60px;
+      height: 45px;
+      position: absolute; right:9%;
+      margin: 15px;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+      cursor: pointer;
+}
+#btn-menu span {
+      display: block;
+      position: absolute;
+      height: 9px;
+      width: 100%;
+      background: #000000;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -o-transition: .25s ease-in-out;
+      transition: .25s ease-in-out;
+}
+
+#btn-menu span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#btn-menu span:nth-child(2) {
+  top: 18px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#btn-menu span:nth-child(3) {
+  top: 36px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#btn-menu.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -3px;
+  left: 8px;
+}
+
+#btn-menu.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#btn-menu.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 39px;
+  left: 8px;
+}
+
+/* MENU WINDOW */
+header > div.menu > div.side-menu{
+      /* 태그를 넘어간 부분을 안보이게 하기 위해 hidden 사용, 스크롤을 내려도 메뉴를 볼 수 있게 하기 위해 fixed 사용. */
+      overflow-x:hidden; overflow-y:auto; position:fixed; top:0; right: 0;
+      width:100vw; height:100vh; background-color:rgba(0, 0, 0, 0.89);
+      z-index: -10;
+      /* 위치를 변경하기 위한 코드 */
+      transform:translateX(100%);
+      /* transition 값을 지정하여 변화할 때 자연스럽게 변하도록 함. transform에 transition 적용 */
+      transition:transform 400ms cubic-bezier(0.785, 0.135, 0.150, 0.860)}
+/* 사이드 메뉴가 오픈되었을 때, X위치가 변경됨. 오른쪽에 넘어가 있어서 안 보이다가 open class가 부여되면 보이게 됨. 자바스크립트에서 적용 */
+header > div.menu > div.side-menu.open{transform:translateX(0);}
+header > div.menu > div.side-menu > ul{
+      /* 카테고리의 위치를 설정함. */
+      margin:0;padding:0;margin-top: 200px;margin-left:10%;}
+/* 카테고리 앞에 점?을 없어지게 만들고, 글자를 좌측정렬함. */
+header > div.menu > div.side-menu > ul > li {list-style-type: none; display:block; text-align: left;}
+header > div.menu > div.side-menu > ul > li > a{
+      /* 카테고리 위치 지정 및 글자 설정 */
+      vertical-align:top;
+      text-decoration:none;font-size:200px;
+      font-weight:700;letter-spacing:10px;
+      line-height:100%;opacity:0;transform:translateX(20px);}
+header > div.menu > div.side-menu > ul > li > a > span{color:#fff;}
+header > div.menu > div.side-menu > ul > li > a > span:hover{
+      /* 카테고리에 마우스 hover했을 때, 색상이 변하도록 함. */
+      color: #2100df;}
+header > div.menu > div.side-menu > ul > li a:hover span::after{width:100%}
+
+
+header > div.menu > div.side-menu .btn-close{
+      /* side메뉴를 닫게 하기 위한 닫힘 버튼*/
+      overflow:hidden;display:block;position:absolute;top:30px;right:9%;
+      width: 40px; height: 40px; padding:15px;cursor:pointer; border-radius: 50%; border: 1px solid #fff;
+      transform:translateX(0) rotate(0deg);
+      transition:all 400ms cubic-bezier(0.455,0.030,0.515,0.955)}
+/* header > div.menu > div.side-menu.open .btn-close{opacity:100;} */
+header > div.menu > div.side-menu .btn-close span{overflow:hidden;display:block;position:relative;width:100%;height:100%}
+header > div.menu > div.side-menu .btn-close span::before,.side-menu .btn-close span::after{
+      content: '';display:block;position:absolute;height:1px;width:200%;top:50%;left:-50%;
+      /* transition 값을 지정하여 변화할 때 자연스럽게 변하도록 함. 배경색 속성에 transition 적용. -> 엑스버튼의 색상이 자연스럽게 변하게 함. */
+      -webkit-transition:background-color 180ms cubic-bezier(0.455,0.030,0.515,0.955);
+      -moz-transition:background-color 180ms cubic-bezier(0.455,0.030,0.515,0.955);
+      -o-transition:background-color 180ms cubic-bezier(0.455,0.030,0.515,0.955);
+      -ms-transition:background-color 180ms cubic-bezier(0.455,0.030,0.515,0.955);
+      transition:background-color 180ms cubic-bezier(0.455,0.030,0.515,0.955)}
+header > div.menu > div.side-menu .btn-close span::before{
+      /* close 버튼의 x모양을 만들기 위해 rotate 값을 줌. "/" 에 해당, translateY도 함께 조정함으로 써 버튼의 가운데에 오게 함. */
+      background-color: #fff;
+      -webkit-transform:translateY(-50%) rotate(45deg);-moz-transform:translateY(-50%) rotate(45deg);
+      -ms-transform:translateY(-50%) rotate(45deg);-o-transform:translateY(-50%) rotate(45deg);
+      transform:translateY(-50%) rotate(45deg)}
+header > div.menu > div.side-menu .btn-close span::after{
+       /* close 버튼의 x모양을 만들기 위해 rotate 값을 줌. "\"에 해당, translateY도 함께 조정함으로 써 버튼의 가운데에 오게 함. */
+       background-color: #fff;
+      -webkit-transform:translateY(-50%) rotate(-45deg);-moz-transform:translateY(-50%) rotate(-45deg);
+      -ms-transform:translateY(-50%) rotate(-45deg);-o-transform:translateY(-50%) rotate(-45deg);
+      transform:translateY(-50%) rotate(-45deg)}    
+header > div.menu > div.side-menu .btn-close:hover{
+      /* 마우스 hover했을 때, 외곽선 변경. */
+      width: 40px; height: 40px; border:1px solid #f5f5f58c; border-radius: 50%;}
+header > div.menu > div.side-menu .btn-close:hover span::before,.side-menu .btn-close:hover span::after{
+      /* 마우스 hover했을 때, x에 색 부여 */
+      background-color:#f5f5f5} 
+header > div.menu > div.side-menu li.ani > a{
+      /* side 메뉴의 카테고리가 자연스럽게 나타나게 하기 위해 opacity값과 animation 값을 부여.
+      자바스크립트를 통해 menu 버튼을 눌렀을 때 활성화 되도록 함. */
+      opacity:1.0;transform:translateX(0);animation:menuAni 250ms cubic-bezier(0.455,0.030,0.515,0.955)}
+
+@keyframes menuAni{
+    0%{opacity:0;transform:translateX(20px)}
+    100%{opacity:1.0;transform:translateX(0)}
+}

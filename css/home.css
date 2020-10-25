@@ -1,10 +1,8 @@
 .main-text{
-      position: absolute;
-      top:240px;
-      left: 0;right: 0;
-      margin: auto;
+      display: block;
+      margin-top: 240px;
       width: 100vw;
-      height: 596px;
+      height: 585px;
       text-align: center;
       overflow: hidden;
       z-index: -1;
@@ -12,14 +10,14 @@
 
 .main-text .title{
       position: relative;
-      display: block;
+      display: inline-block;
       width: 100%;
       font-weight: 400;
       line-height: 100px;
       margin-bottom: 70px;
       transform: translateX(-10);
        white-space: nowrap;
-       color:#888;
+       color:rgb(145, 145, 145);
 }
 .title>span {margin-right: 60px; font-size: 5.9rem;}
 
@@ -124,4 +122,10 @@
 
 .letter:nth-child(21) {
   transition-delay: 0.3s;
+}
+
+
+.scrollDown{
+  margin-top: 80px;
+  text-align: center;
 }

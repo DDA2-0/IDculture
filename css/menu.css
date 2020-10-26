@@ -4,7 +4,7 @@ body{
     font-size: 15px;
     line-height: 1.7;
     color: #838383;
-    background-color: #d8d8d8;
+    background-color: #ffffff;
     overflow-x: hidden;
     -webkit-transition: all 300ms linear;
     transition: all 300ms linear;
@@ -48,6 +48,7 @@ a {
     transition: all .5s ease-in-out;
     text-decoration: none;
 }
+.logo-wrap a svg {fill:none;stroke:#C19889;stroke-linecap:square;stroke-miterlimit:10;stroke-width:5px;width: 48.13px; height: 60px;}
 .logo-wrap:hover {
     opacity: 0.8;
     transition: all .5s ease-in-out;
@@ -113,7 +114,7 @@ a {
     height: 100vh;
     background: rgba(20, 21, 26,0.6);
     border-bottom-left-radius: 200%;
-    z-index: -1;
+    z-index: 100;
     -webkit-transition: -webkit-transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, border-radius linear 0.8s;
     transition: -webkit-transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, border-radius linear 0.8s;
     transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, border-radius linear 0.8s;
@@ -139,12 +140,13 @@ a {
           transform: translate(0%, -50%);
     width: 100%;
     text-align: center;
+    z-index: 103;
 }
 .nav__list {
     position: relative;
     padding: 0;
     margin: 0;
-    z-index: 2;
+    z-index: 102;
 }
 .nav__list-item {
     position: relative;
@@ -181,26 +183,6 @@ a {
     display: inline-block;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear; 
-}
-.nav__list-item a:after{ 
-    position: absolute;
-    content: '';
-    top: 50%;
-    margin-top: -2px;
-    left: 50%;
-    width: 0;
-    height: 0;
-    opacity: 0;
-    background-color: #8167a9;
-    z-index: 1;
-    -webkit-transition: all 200ms linear;
-    transition: all 200ms linear; 
-}
-.nav__list-item a:hover:after{ 
-    height: 4px;
-    opacity: 1;
-    left: 0;
-    width: 100%;
 }
 .nav__list-item a:hover{
     color: rgba(255,255,255,1);
@@ -310,7 +292,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 
 /* footer */
 
-footer {background-color:#000000; width: 100vw; text-align:center; color:#FFF; height: 760px;font-size:13px; padding-top:130px; z-index:-2;}
+footer {background-color:#000000; width: 100vw; text-align:center; color:#FFF; height: 760px;font-size:13px; padding-top:130px; z-index:-2; position: relative;}
 footer > ul {width:1140px; display:inline-block;}
 footer > ul > li {width:50%; float:left; text-align:left; list-style-type:none;}
 footer > ul > li > div {padding:0 60px 0 0;}

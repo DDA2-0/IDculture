@@ -17,7 +17,7 @@
       margin-bottom: 70px;
       transform: translateX(-10);
        white-space: nowrap;
-       color:rgb(145, 145, 145);
+       color:#D8D8D8;
 }
 .title>span {margin-right: 60px; font-size: 5.9rem;}
 
@@ -27,13 +27,13 @@
   height:90px;
   text-decoration: none;
   overflow: hidden;
-  color: #1a1a1a;
+  color: #C19889;
 }
 .rolling-text:hover .letter, .rolling-text.play .letter {
   transform: translateY(-100%);
 }
 .rolling-text .block:last-child {
-  color: #d3a13b;
+  color: #803a31;
 }
 .rolling-text .letter {
   display: inline-block;
@@ -124,8 +124,3 @@
   transition-delay: 0.3s;
 }
 
-
-.scrollDown{
-  margin-top: 80px;
-  text-align: center;
-}

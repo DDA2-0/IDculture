@@ -1,0 +1,56 @@
+.main_visual{
+      background-color: #C19889;
+      height: 1080px;
+      position: relative;
+}
+
+.main_txt{
+      width: 1440px;
+      position: absolute;
+      top:360px;
+      left: 250px;
+}
+h3 {
+      color:#482D23;
+      font-size: 70px;
+      font-weight: 400;
+      margin-top:40px
+}
+h3 span{font-weight: 700;}
+
+h4 {
+      color:#482D23;
+      font-size: 60px;
+      font-weight: 400;
+      margin-top:40px
+}
+h4 span{font-weight: 700; color:#C19889;}
+.small_tit{
+      color:#fff;
+      font-size: 40px;
+}
+
+.small_txt{
+      color:#C19889;
+      font-size: 40px;
+}
+
+.main_txt button{
+      width: 190px;
+      height: 70px;
+      border-radius: 35px;
+      border: 1.5px solid #fff;
+      background: none;
+      font-size: 22px;
+      font-family: 'Nanum Myeongjo', serif;
+      color: #fff;
+      margin-top: 60px;
+}
+
+.section1{position: relative; height: 3000px;}
+.approach{
+      width: 1440px;
+      position: absolute;
+      top:360px;
+      left: 250px;
+}

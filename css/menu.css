@@ -321,6 +321,12 @@ footer > ul > li > dl.txt_3rd > dt > p {font-size: 18px; line-height: 32px; heig
     margin: 0 auto;
     margin-top: 110px;
   }
+  .scroll_button2{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 110px;
+  }
 .ca3-scroll-down-arrow {
     background-image: url(../img/arrow.png);
     background-size: contain;

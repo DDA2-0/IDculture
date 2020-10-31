@@ -197,3 +197,106 @@ header > div.menu > div.side-menu li.ani > a{
     0%{opacity:0;transform:translateX(20px)}
     100%{opacity:1.0;transform:translateX(0)}
 }
+
+
+
+.contents{
+      margin-left: 250px;
+      width: 1440px;
+      height: 3000px;
+    }
+    h3 {
+      color:#482D23;
+      font-size: 54px;
+      font-weight: 700;
+      margin-top:30px
+    }
+    .contents_txt{
+      color:#482D23;
+      font-size: 19px;
+      line-height: 36px;
+      margin-top:30px;
+      font-family: 'Nanum Gothic', sans-serif;
+    }
+    
+    .section2{
+      background-color: #fff;
+      width: 1420px;
+      height: 1050px;
+      margin: 0 auto;
+    }
+    .about_box{
+      width: 680px;
+      height: 500px;
+      border: 2px solid #7E6359;
+      border-radius: 0 50px 0 0;
+      float: left;
+      margin-top: 190px;
+      margin-right: 50px;
+      background-image: url('../img/home_button2.png');
+      cursor: pointer;
+    }
+    .service_box{
+      width: 680px;
+      height: 500px;
+      border: 2px solid #7E6359;
+      border-radius: 0 50px 0 0;
+      float: left;
+      margin-top: 190px;
+      background-image: url('../img/home_button1.png');
+      cursor: pointer;
+    }
+    
+    hr{
+      width: 200px;
+      float: left;
+      border: 1px solid #7E6359;
+    }
+    
+    .button_text_box{
+      position: absolute;
+      bottom:70px;
+      left:40px;
+    }
+    .button_text_box h5{
+      font-size: 30px;
+      color: #5B3B2F;
+    }
+    .button_text_box p{
+      font-size: 18px;
+    }
+    
+    .image_box{
+      margin-top: 130px;
+      display: flex;
+          flex-wrap: wrap;
+          padding: 0 4px;
+    }
+    .column {
+          flex: 25%;
+          max-width: 30%;
+      padding: 0 4px;
+      margin-right: 20px;
+    }
+    
+    .column img {
+      margin-top: 20px;
+      vertical-align: middle;
+    }
+    
+    
+    /* Two column layout */
+    @media (max-width: 800px) {
+          .column {
+                flex: 50%;
+                max-width: 50%;
+          }
+    }
+    
+    /* One column layout */
+    @media (max-width: 600px) {
+          .column {
+                flex: 100%;
+                max-width: 100%;
+          }
+    }

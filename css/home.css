@@ -85,11 +85,11 @@
     }
   } */
 
-  .loop-holder {
-    display: flex;
-    white-space: nowrap;
-    overflow: hidden;
-  }
+.loop-holder {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+}
   
 .loop-holder__text {
     animation: textLoop 30s linear infinite;

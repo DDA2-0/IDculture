@@ -3,6 +3,12 @@
             $('.main_color').css({
                   'opacity':'0'
             });
+            $('.img_object').css({
+                  'opacity':'.4'
+            });
+            $('.img_object2').css({
+                  'opacity':'.4'
+            });
             $('.color_circle1').mouseenter(function(){
                   $('.main_color').css({
                         'opacity':'1',

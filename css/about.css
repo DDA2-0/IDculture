@@ -52,7 +52,7 @@ h4 span{font-weight: 700; color:#C19889;}
 
 .section3{
 	position: relative;
-	height: 7200px;
+	height: 6800px;
 }
 
 .design_concept{
@@ -212,4 +212,26 @@ h4 span{font-weight: 700; color:#C19889;}
 	position: relative;
 	left: 250px;
 	margin-top: 420px;
+}
+
+.img_object{
+	position: absolute;
+	right: 0;
+	opacity: .2;
+}
+
+.img_object2{
+	position: absolute;
+	left: 0;
+	opacity: .2;
+}
+.img_object2 img{
+	transform: rotate(70deg);
+}
+
+.img_object3{
+	position: absolute;
+	right: 0;
+	bottom:0;
+	opacity: .2;
 }

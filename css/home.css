@@ -29,7 +29,7 @@
     overflow: hidden;
     margin-bottom: 50px;
   }
-
+/* 
   .scrolling-text span {
     font-size: 70px;
     margin: 0;
@@ -83,19 +83,81 @@
     100% {
       transform: translate(0, 0);
     }
-  }
+  } */
 
+  .loop-holder {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+.loop-holder__text {
+    animation: textLoop 30s linear infinite;
+    font-size: 70px;
+    color: rgb(190, 190, 190);
+    padding-right: .35em;
+}
+@keyframes textLoop {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.loop-holder__text2 {
+    animation: textLoop2 30s linear infinite;
+    font-size: 70px;
+    color: rgb(190, 190, 190);
+    padding-right: .35em;
+}
+@keyframes textLoop2 {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
 
 .rolling-text-wrap{
   position: absolute;
+  z-index: 10;
+  font-size: 70px;
+  font-weight: 700;
+  width: 100%;
+}
+#rolling1{
+  position: relative;
+  left:30%;
+}
+#rolling2{
+  position: relative;
+  left:50%;
+}
+#rolling3{
+  position: relative;
+  left:40%;
+}
+#rolling4{
+  position: relative;
+  left:60%;
 }
 .rolling-text {
-  display: inline-block;
   font-family: "Nanum Myeongjo", serif;
-  height:90px;
+  height: 100px;
   text-decoration: none;
   overflow: hidden;
   color: #C19889;
+  margin-bottom: 50px;
+  text-align: left;
+  width: fit-content;
+  background-color: #fff;
 }
 .rolling-text:hover .letter, .rolling-text.play .letter {
   transform: translateY(-100%);
@@ -456,7 +518,7 @@ opacity: .2;
 }
 
 /* button */
-.appo-card button {
+/* .appo-card button {
 font-family: inherit;
 font-weight: bold;
 color: var(--white-1);
@@ -481,7 +543,7 @@ border-color: currentColor;
 
 .appo-card button:active {
 transform: translate(2px);
-}
+} */
 
 
 
@@ -693,7 +755,8 @@ transform: translate(2px);
 /* 플랫폼 소개 (대표서비스4개) */
 .info_flatform{
   text-align: center;
-  margin-bottom: 400px;
+  margin-bottom: 300px;
+  margin-top: 200px;
 }
 
 .info_flatform h5{
@@ -702,7 +765,9 @@ transform: translate(2px);
 	font-weight: 600;
 	color:#7E6359;
 }
-
+.info_flatform p{
+  font-family: 'Nanum Gothic', sans-serif;
+}
 
 /* 카드 4개 */
 .info_card_wrap{
@@ -788,6 +853,7 @@ left: 0;
 width: 100%;
 height: 100%;
 }
+.logo-wrap2 svg {fill:none;stroke:#ffffff;stroke-linecap:square;stroke-miterlimit:10;stroke-width:5px;width: 60px;}
 
 .img-bg {
 background: #C19889;
@@ -827,7 +893,7 @@ width: 100%;
 margin-top: 12px;
 padding-bottom: 12px;
 
-font-size: 14px;
+font-size: 16px;
 text-align: center;
 
 position: relative;
@@ -852,7 +918,7 @@ opacity: .2;
 }
 
 /* button */
-.flip-card button {
+/* .flip-card button {
 font-family: inherit;
 font-weight: bold;
 color: var(--white-1);
@@ -877,8 +943,11 @@ border-color: currentColor;
 
 .flip-card button:active {
 transform: translate(2px);
+} */
+.venn-txt{
+  font-size: 14px;
+  text-align: center;
 }
-
 h4 {
   color:#482D23;
   font-size: 60px;
@@ -894,4 +963,11 @@ h4 span{font-weight: 700; color:#C19889;}
 .small_txt{
   color:#C19889;
   font-size: 40px;
+}
+
+.three_circle .small_txt{
+  color:#C19889;
+  font-size: 40px;
+  text-align: center;
+  margin: 50px 0;
 }

@@ -7,12 +7,11 @@
 .main_txt{
       position: relative;
       z-index: 1;
-      width: 1440px;
       margin:0 auto;
+      width: 1450px;
 }
 .small_tit{
       padding-top: 280px;
-
       color:#C19889;
       font-size: 100px;
       text-align: center;
@@ -44,13 +43,12 @@
 
 .movie_wrap{
       position: relative;
-      height: 1080px;
+      padding-top: 80px;
       left:250px;
-      margin-top: 215px;
 }
 
 .movie_wrap h5 {
-      font-size: 70px;
+      font-size: 60px;
       line-height: 90px;
       float: left;
 }
@@ -62,7 +60,16 @@
       margin-left: 105px;
       border: 1px solid #C19889;
 }
-
+.movie_background{
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      bottom: 0;
+}
+.movie_background img{
+      width:550px;
+      opacity: .4;
+}
 /* .iphonex-cover {
       position: absolute;
       z-index: 50;
@@ -85,7 +92,7 @@
 .swiper-container {
       position: relative;
       width: 100%;
-      height: 812px;
+      height: 545px;
       margin: 0 auto;
       margin-top: 80px;
 }
@@ -93,7 +100,6 @@
 .swiper-slide {
       text-align: center;
       font-size: 18px;
-      background: #fff;
 
       display: -webkit-box;
       display: -ms-flexbox;
@@ -110,47 +116,69 @@
 }
 .swiper-slide img{
       border-radius: 40px;
+      border: 1px solid #999;
+      width: 250px;
 }
 
-.section3 {margin-top: 580px; height: 1660px;}
 .book_wrap{
       position: relative;
-      height: 1080px;
-      right:250px;
-      margin-top: 215px;
+      padding-top: 80px;
 }
 
 .book_wrap h5 {
-      font-size: 70px;
+      font-size: 60px;
       line-height: 90px;
-      float: right;
+      float: left;
 }
 
 .book_wrap hr {
-      float: right;
       width: 700px;
+      float: left;
       margin-top: 80px;
       margin-right: 105px;
       border: 1px solid #C19889;
 }
 .book_img{
-      margin: 0 auto;
-      margin-top: 180px;
-      height: 1000px;
+      position: relative;
+      left: 20%;
+      margin-top: 50px;
 }
 
 .book_img div{
-      float: right;
-      margin-left: 80px;
+      margin-left: 60px;
+      float:left;
 }
 
 .book_img img {
-      width: 395px;
+      width: 280px;
 }
 
 .book_img1{
       margin-top: 150px;
 }
+.book_background{
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      bottom: 0;
+}
+.book_background img{
+      width:500px;
+      opacity: .4;
+}
+.book_background2{
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      top: 300px;
+}
+.book_background2 img{
+      width:400px;
+      opacity: .4;
+      transform: rotate(-35deg)
+}
+
+
 
 .drag{
       font-size: 20px;
@@ -197,28 +225,17 @@ transform: translateX(10px) rotate(-45deg);
 width: 35px;
 }
 
-.section4 {margin-top: 280px;}
 .meet_wrap{
       position: relative;
-      height: 1080px;
-      right:250px;
-      margin-top: 215px;
+      padding-top: 80px;
+      margin: 0 auto;
 }
 
 .meet_wrap h5 {
-      font-size: 70px;
+      font-size: 60px;
       line-height: 90px;
-      float: right;
+      text-align: center;
 }
-
-.meet_wrap hr {
-      float: right;
-      width: 600px;
-      margin-top: 80px;
-      margin-right: 105px;
-      border: 1px solid #C19889;
-}
-
 /* .front_chat{
       width: 410px;
       height:130px;
@@ -226,25 +243,69 @@ width: 35px;
       background-color: #c19889d7;
 } */
 
+.meet_content_wrap{
+      width: 800px;
+      margin: 0 auto;
+      margin-top: 80px;
+}
 
-.section5 {margin-top: 280px;}
+.meet_content_wrap img{
+      float: left;
+      width: 340px;
+      margin-right: 50px;
+}
+
+.meet_background{
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      bottom: 0;
+}
+.meet_background img{
+      width: 800px;
+      opacity: .4;
+}
+
 .fund_wrap{
       position: relative;
-      height: 1080px;
-      left:250px;
-      margin-top: 215px;
+      padding-top: 80px;
+      margin: 0 auto;
 }
 
 .fund_wrap h5 {
-      font-size: 70px;
+      font-size: 60px;
       line-height: 90px;
-      float: left;
+      text-align: center;
 }
 
-.fund_wrap hr {
-      float: left;
-      width: 600px;
-      margin-top: 80px;
-      margin-left: 105px;
-      border: 1px solid #C19889;
+.end_wrap{
+      position: relative;
+      padding-top: 330px;
+      margin: 0 auto;
+}
+
+.end_wrap h5 {
+      font-size: 60px;
+      line-height: 90px;
+      text-align: center;
+}
+.impact_txt{
+      font-weight: 700;
+      color:#C19889;
+}
+
+.fund_content_wrap {
+      width: 1400px;
+      margin: 0 auto;
+      margin-top: 50px;
+}
+
+.fund_img img{
+      float:left;
+      width: 340px;
+      margin-right: 20px;
+}
+
+.fund_img_last{
+      margin-right: 0;
 }

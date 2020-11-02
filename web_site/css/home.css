@@ -1,11 +1,15 @@
 .main-text{
   display: block;
-  margin-top: 140px;
+  margin-top: 200px;
   width: 100vw;
   height: 585px;
   text-align: center;
   overflow: hidden;
   z-index: -1;
+}
+
+.main-visual{
+  height: 1080px;
 }
 
 /* .main-text .title{

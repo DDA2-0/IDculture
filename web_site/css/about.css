@@ -52,7 +52,7 @@ h4 span{font-weight: 700; color:#C19889;}
 
 .section3{
 	position: relative;
-	height: 6800px;
+	height: 6500px;
 }
 
 .design_concept{
@@ -186,11 +186,11 @@ h4 span{font-weight: 700; color:#C19889;}
       src : url("../fonts/AppleSDGothicNeoB.ttf");
 	font-family: "sd_B";
 }
-.typo_wrap{margin-top: 150px; height: 630px;}
+.typo_wrap{margin-top: 150px; height: 430px;}
 .sd, .nanum{float: left; color:#c19889;}
 .sd{margin-right: 80px;}
 .sd h5{font-family: 'sd_R'; font-size: 43px;}
-.sd p {font-size: 40px;}
+.sd p {font-size: 35px;}
 .sd1{
 	font-family: 'sd_L';
 }
@@ -202,7 +202,7 @@ h4 span{font-weight: 700; color:#C19889;}
 }
 
 .nanum h5{font-family: 'Nanum Myeongjo', serif; font-size: 43px;}
-.nanum p {font-size: 40px; font-family: 'Nanum Myeongjo', serif;}
+.nanum p {font-size: 35px; font-family: 'Nanum Myeongjo', serif;}
 .nanum1{font-weight: lighter;}
 .nanum2{font-weight: normal;}
 .nanum3{font-weight: bold;}
@@ -211,7 +211,7 @@ h4 span{font-weight: 700; color:#C19889;}
 	width: 1440px;
 	position: relative;
 	left: 250px;
-	margin-top: 420px;
+	margin-top: 250px;
 }
 
 .img_object{

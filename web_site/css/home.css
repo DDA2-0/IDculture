@@ -997,7 +997,8 @@ margin: 50px 0;
 /* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
 @media all and (max-width:479px) { 
   /*스타일입력*/
-  html{width: 100vw; overflow-x: hidden;}
+  html{width: 100vw; max-width: 479px; overflow-x: hidden;}
+  body{width: 100vw; max-width: 479px;}
   .scrolling-text {
     height:40px;
     margin-bottom: 20px;
@@ -1012,10 +1013,10 @@ margin: 50px 0;
     margin-bottom: 20px;
   }
   .main-visual{
-    width: 100%;height: 630px;
+    width: 100vw; max-width: 479px;height: 630px;
   }
   
-  .section1_{width: 100%;height: 360px;}
+  .section1_{width: 100vw; max-width: 479px;height: 360px;}
   .overview {padding-top: 100px; width: 80%; margin: 0 auto;}
   .overview_txt{
     font-size: 1rem;
@@ -1026,13 +1027,12 @@ margin: 50px 0;
   .overview img{
     width: 40%;
   }
-  .section1{width: 100%;height: 2000px;}
+  .section1{width: 100vw; max-width: 479px;height: 2000px;}
 
   .learn_more{display: none;}
 
   .approach{
-    width: 80%;
-    left: 8%;
+    width: 100vw; max-width: 479px;
   }
   .approach h4{
     font-size: 20px;
@@ -1042,14 +1042,14 @@ margin: 50px 0;
   }
 
   .appo_card_wrap{
-    width: 100%;
+    width: 100vw; max-width: 479px;
   }
 
   .appo-card-container{
     width: 33%; height: 40%; 
     margin-left: 8%;
   }
-  .appo-card{
+  .appo-card{ 
     width: 100%; height: 70%;
   }
   .appo-card-front ul{

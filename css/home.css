@@ -1092,9 +1092,11 @@ margin: 50px 0;
   .info_flatform p {font-size: 10px; width: 88%; text-align: center; margin: auto;}
   
   .info_card_wrap{
-    width: 100vw; max-width: 479px;
-    margin-left: 5%;
-    margin-top: 10%;
+    width: 320px;
+    margin: 30px auto;
+  }
+  .f-c-c2{
+    margin:0;
   }
   .flip-card-container{
     width: 150px; height: 150px; margin-bottom: 10px;

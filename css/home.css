@@ -997,6 +997,13 @@ margin: 50px 0;
 /* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
 @media all and (max-width:479px) { 
   /*스타일입력*/
+
+  /* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+} */
+
   html{width: 100vw; overflow-x: hidden;}
   .scrolling-text {
     height:40px;
@@ -1006,6 +1013,7 @@ margin: 50px 0;
   .loop-holder__text2 {font-size: 30px;}
   .rolling-text-wrap{
     font-size: 30px;
+    width: fit-content;
     }
   .rolling-text {
     height: 40px;

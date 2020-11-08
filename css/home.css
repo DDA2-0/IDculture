@@ -992,6 +992,119 @@ margin: 50px 0;
 /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
 @media all and (min-width:480px) and (max-width:767px) {
    /*스타일입력*/
+   
+  /* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+} */
+  html{width: 100vw; overflow-x: hidden;}
+  .scrolling-text {
+    height:60px;
+    margin-bottom: 30px;
+    }
+  .loop-holder__text {font-size: 40px;}
+  .loop-holder__text2 {font-size: 40px;}
+  .rolling-text-wrap{
+    font-size: 40px;
+    width: fit-content;
+    }
+  .rolling-text {
+    height: 60px;
+    margin-bottom: 30px;
+  }
+  #rolling2{left:70%}
+  #rolling3{left:80%}
+  #rolling4{left:100%;}
+
+  .main-visual{
+    width: 100%;height: 630px;
+  }
+  
+  .section1_{width: 100%;height: 450px; overflow: hidden;}
+  .overview {padding-top: 180px; width: 80%; margin: 0 auto;}
+  .overview_txt{
+    font-size: 1.2rem;
+  }
+  .small_txt{
+    font-size: 1rem;
+  }
+  .overview img{
+    width: 30%;
+  }
+  .section1{width: 100%;height: 2500px;}
+
+  .learn_more{display: none;}
+
+  .approach{
+    width: 80%;
+    left: 10%;
+  }
+  .approach h4{
+    font-size: 30px;
+  }
+  .appo_flatform{
+    margin-top: 300px;
+  }
+
+  .appo_card_wrap{
+    width: 100%;
+  }
+
+  .appo-card-container{
+    width: 33.3%; height:70%; 
+    margin-left: 8%;
+    margin-bottom: -100px;
+  }
+  .appo-card{
+    width: 100%; height: 70%;
+  }
+  .appo-card-front ul{
+    margin-top: 0;
+  }
+  .appo-card-front ul li{
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+  .appo-card ul li:nth-child(2n){
+    font-size: 5rem;
+  }
+  .appo-card-front ul li span{
+    font-size: .8rem;
+  }
+  
+  .three_circle .small_txt{margin: 100px 0;}
+  .venn-wrapper{
+    width: 350px; height: 350px;
+  }
+  .venn-wrapper h1,.venn-wrapper:hover h1{font-size: 40px;}
+  .venn-wrapper p {font-size: 20px;}
+  .venn-wrapper span{font-size: 12px;}
+  .page{height: 400px;}
+
+  .info_flatform {margin-bottom: 30px;}
+  .info_flatform h5 {font-size: 30px; margin-bottom: 20px;}
+  .info_flatform p {font-size: 12px; width: 88%; text-align: center; margin: auto;}
+  
+  .info_card_wrap{
+    width: 420px;
+    margin: 30px auto;
+  }
+  .f-c-c2{
+    margin:0;
+  }
+  .flip-card-container{
+    width: 200px; height: 200px; margin-bottom: 10px;
+  }
+  .card-back img{width: 210px;}
+  .info_flatform{
+    height: 750px;
+  }
+  .expectation{ height: 500px;}
+  .ex_txt_wrap{top:180px;}
+  .ex_txt_wrap h4{font-size: 25px; margin: 10px 0; line-height: 30px;}
+  .ex_txt_wrap p{font-size: 15px; line-height: 20px;}
+  .expectation_tit{font-size: 10px;}
   }
 
 /* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
@@ -1003,7 +1116,6 @@ margin: 50px 0;
     color: #0f0 !important;
     outline: solid #f00 1px !important;
 } */
-
   html{width: 100vw; overflow-x: hidden;}
   .scrolling-text {
     height:40px;
@@ -1038,7 +1150,7 @@ margin: 50px 0;
   .overview img{
     width: 40%;
   }
-  .section1{width: 100%;height: 2000px;}
+  .section1{width: 100%;height: 3200px;}
 
   .learn_more{display: none;}
 
@@ -1058,8 +1170,9 @@ margin: 50px 0;
   }
 
   .appo-card-container{
-    width: 33%; height: 40%; 
+    width: 80%; height:90%; 
     margin-left: 8%;
+    margin-bottom: -200px;
   }
   .appo-card{
     width: 100%; height: 70%;
@@ -1069,13 +1182,13 @@ margin: 50px 0;
   }
   .appo-card-front ul li{
     margin-top: 0;
-    font-size: .7rem;
+    font-size: 1.5rem;
   }
   .appo-card ul li:nth-child(2n){
-    font-size: 2rem;
+    font-size: 5rem;
   }
   .appo-card-front ul li span{
-    font-size: .5rem;
+    font-size: .8rem;
   }
   
   .three_circle .small_txt{margin: 30px 0;}

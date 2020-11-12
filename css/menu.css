@@ -374,15 +374,66 @@ footer > ul > li > dl.txt_3rd > dt > p {font-size: 18px; line-height: 32px; heig
   100% { transform:translate(0,20px); opacity: 0; }
   }
 
-  /* PC , 테블릿 가로 (해상도 768px ~ 1023px)*/
-@media all and (min-width:768px) and (max-width:1023px) {
-    /*스타일입력*/
-   }
- 
  /* 테블릿 세로 (해상도 768px ~ 1023px)*/
  @media all and (min-width:768px) and (max-width:1023px) {
     /*스타일입력*/
-   }
+    .logo-wrap a svg {width: 25px;}
+    .logo-wrap {top: 20px;}
+        
+        .cd-header{
+            position: fixed;
+            width:100vw;
+            top:0;
+            left:0;
+            z-index:100;
+        } 
+        
+        .header-wrapper{
+            position: relative;
+            width: 95%;
+            margin-left: 5%;
+        } 
+    
+        .nav {
+            width: 100vw;
+            position: fixed;
+            z-index: 98;
+        }
+        .nav__content {
+            width: 100vw;
+            top: 50%;
+        }
+        footer{
+            width: 100%;
+            height: 400px;
+            padding-top: 60px;
+        }
+        footer ul{
+            width: 100%;
+            margin-left: 70px;
+        }
+        footer > ul > li > div > dl.txt_1st > dd > ul {margin-left: 0;}
+        footer > ul > li > div > dl.txt_1st > dd > ul > li {margin-bottom: 10px;}
+        footer > ul > li > div > dl.txt_1st > dd > ul > li > a{
+            font-size: 25px;
+            line-height: 20px;
+        }
+        footer > ul > li > div > dl.txt_2nd > dt > button {width: 100px; height: 30px; border-radius: 20px; border-color: none; margin-right: 10px; margin-top: 10px; font-size:10px; font-family: 'Nanum Myeongjo', serif; background-color: #A89791;}
+        footer > ul > li > dl.txt_3rd > dt{font-size: 15px;}
+        footer > ul > li > dl.txt_3rd > dt > p {font-size: 9px; line-height:15px; height: 75px;}
+        footer > ul > li > div {padding:0 20px 0 0;}
+        footer > ul > li > div > dl.txt_2nd > dt{font-size: 9px;}
+    
+        footer ul li{
+            width: 50%;
+        }
+        footer > ul > li > dl.txt_3rd{padding:0; width:190px;}
+        #footer_logo{
+            width: 60px;
+            float: left;;
+            margin-top: 80px;
+        }
+       }
  
  /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
  @media all and (min-width:480px) and (max-width:767px) {

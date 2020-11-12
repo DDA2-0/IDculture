@@ -67,6 +67,7 @@
       bottom: 0;
 }
 .movie_background img{
+      border: none;
       width:550px;
       opacity: .4;
 }
@@ -87,7 +88,18 @@
       left: 0;
       right: 0;
 } */
-
+      
+img{border-radius: 30px; border: 1px solid rgb(204, 204, 204);}
+.movie_click{position: absolute; margin-top: 40px; z-index: 30; cursor: pointer;}
+.movie_click img{width: 280px; position: absolute;}
+.click_thum{opacity: 1; transition: opacity .3s ease-in-out; border-radius: 30px;}
+.gif{z-index: -1; opacity: 0; transition: opacity .3s ease-in-out; border-radius: 30px;}
+.book_click{position: relative; z-index: 30;cursor: pointer;}
+.book_click img{width: 280px; position: absolute;}
+.meet_click{position: relative; z-index: 30;cursor: pointer;}
+.meet_click img{width: 280px; position: absolute;}
+.fund_click{position: relative; z-index: 30;cursor: pointer;}
+.fund_click img{width: 280px; position: absolute;}
 
 .swiper-container {
       position: relative;
@@ -115,7 +127,6 @@
       align-items: center;
 }
 .swiper-slide img{
-      border-radius: 40px;
       border: 1px solid #999;
       width: 250px;
 }
@@ -154,10 +165,12 @@
 }
 
 .book_img1{
-      margin-top: 150px;
-}
-.book_background{
       position: absolute;
+      margin-top: 90px;
+}
+.book_img2 {position: absolute;left: 20%;}
+.book_img1:last-of-type{left: 40%;}
+.book_background{
       z-index: -1;
       left: 0;
       bottom: 0;
@@ -169,10 +182,10 @@
 .book_background2{
       position: absolute;
       z-index: -1;
-      right: 0;
       top: 300px;
 }
 .book_background2 img{
+      border: none;
       width:400px;
       opacity: .4;
       transform: rotate(-35deg)
@@ -248,13 +261,8 @@ width: 35px;
       margin: 0 auto;
       margin-top: 80px;
 }
-
-.meet_content_wrap img{
-      float: left;
-      width: 340px;
-      margin-right: 50px;
-}
-
+.meet_img2{position: absolute; left: 53%;}
+.meet_img2 img{width: 280px;}
 .meet_background{
       position: absolute;
       z-index: -1;
@@ -262,6 +270,7 @@ width: 35px;
       bottom: 0;
 }
 .meet_background img{
+      border: none;
       width: 600px;
       opacity: .4;
 }
@@ -295,37 +304,138 @@ width: 35px;
 }
 
 .fund_content_wrap {
-      width: 1400px;
+      width: 1100px;
       margin: 0 auto;
       margin-top: 50px;
 }
+.fund_img{display: flex; flex-wrap: wrap;justify-content:center;}
 
-.fund_img img{
-      float:left;
-      width: 340px;
-      margin-right: 20px;
-}
 
-.fund_img_last{
-      margin-right: 0;
-}
-/* PC , 테블릿 가로 (해상도 768px ~ 1023px)*/
-@media all and (min-width:768px) and (max-width:1023px) {
-      /*스타일입력*/
-     }
    
    /* 테블릿 세로 (해상도 768px ~ 1023px)*/
    @media all and (min-width:768px) and (max-width:1023px) {
       /*스타일입력*/
+      .movie_click img,.book_click img,.meet_click img.fund_click img {width: 30%;}
+      html{width: 100vw; overflow-x: hidden;}
+      body{width: 100vw; }
+      article{width: 100%; height: 100%;}
+      .pagination{right: 5px; top:50%}
+      .pagination li {width: 8px; height: 8px;}
+      .main_visual{width: 100vw; height: 100vh;}
+      .main_txt{width: 100%;}
+      .main_txt p {font-size: 1.7rem;}
+      .service_div {width: 80vw; margin: 50px auto;}
+      .service_div div{font-size: 1.5rem; width: 20%; height: 10%; margin-right: 5%; margin-bottom: 30px;}
+      .service_div div:last-of-type{margin-right: 0;}
+      .background_img1{display: none;}
+      .movie_wrap{left: 10%;}
+      .movie_wrap h5{font-size: 1.8rem; line-height: 3rem;}
+      hr{display: none;}
+      .swiper-container{display: none;}
+      .movie_click{width: 100%; left:20%; top:80%;}
+      .movie_background, .meet_background{display: none;}
+      .book_wrap{left:10%;}
+      .book_wrap h5{font-size: 1.8rem; line-height: 3rem;}
+      .book_click{width: 100%; margin-top: 70px;}
+      .book_background{display: none;}
+      .book_background2{display: none;}
+      .book_img{left: 10%; margin-top: 30px;}
+      .book_img div {margin:0}
+      .book_img1:last-of-type,.book_img2{display: none;}
+      .meet_wrap{left: 0;}
+      .meet_wrap h5{font-size: 1.8rem; line-height: 3rem;}
+      .meet_click{width: 100%; left:5%; margin-top: 70px;}
+      .fund_wrap{left: 0;}
+      .fund_wrap h5{font-size: 1.8rem; line-height: 3rem;}
+      .fund_content_wrap{width: 100%;}
+      .fund_click{width: 100%; margin-top: 70px;}
+      .meet_content_wrap,.fund_content_wrap{margin-top: 20px;}
+      .end_wrap{padding-top: 0; top:40%}
+      .end_wrap h5{font-size: 1.5rem; line-height: 2rem;}
      }
    
    /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
    @media all and (min-width:480px) and (max-width:767px) {
       /*스타일입력*/
+      html{width: 100vw; overflow-x: hidden;}
+      body{width: 100vw; }
+      article{width: 100%; height: 100%;}
+      .pagination{right: 5px; top:50%}
+      .pagination li {width: 8px; height: 8px;}
+      .main_visual{width: 100vw; height: 100vh;}
+      .main_txt{width: 100%;}
+      .main_txt p {font-size: 1.7rem;}
+      .service_div {width: 80vw; margin: 50px auto;}
+      .service_div div{font-size: 1.5rem; width: 20%; height: 10%; margin-right: 5%; margin-bottom: 30px;}
+      .service_div div:last-of-type{margin-right: 0;}
+      .background_img1{display: none;}
+      .movie_wrap{left: 5%;}
+      .movie_wrap h5{font-size: 1.8rem; line-height: 3rem;}
+      hr{display: none;}
+      .swiper-container{display: none;}
+      .movie_click{width: 100%; left:30%; top:77%; margin-top: 20px;}
+      .movie_background, .meet_background{display: none;}
+      .book_wrap{left: 5%;}
+      .book_wrap h5{font-size: 1.8rem; line-height: 3rem;}
+      .book_click{width: 100%; left:20%; top:30%; margin-top: 20px;}
+      .book_background{display: none;}
+      .book_background2{display: none;}
+      .book_img{left: 5%; margin-top: 30px;}
+      .book_img div {margin:0}
+      .book_img1:last-of-type,.book_img2{display: none;}
+      .meet_wrap{left: 0;}
+      .meet_wrap h5{font-size: 1.8rem; line-height: 3rem;}
+      .meet_click{width: 100%; left:5%; margin-top: 20px;}
+      .fund_wrap{left: 0;}
+      .fund_wrap h5{font-size: 1.8rem; line-height: 3rem;}
+      .fund_content_wrap{width: 100%;}
+      .fund_click{width: 100%; margin-top: 20px;}
+      .meet_content_wrap,.fund_content_wrap{margin-top: 20px;}
+      .end_wrap{padding-top: 0; top:40%}
+      .end_wrap h5{font-size: 1.5rem; line-height: 2rem;}
      }
    
    /* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
    @media all and (max-width:479px) { 
      /*스타일입력*/
-     
+      html{width: 100vw; overflow-x: hidden;}
+      body{width: 100vw; }
+      article{width: 100%; height: 100%;}
+      .pagination{right: 5px; top:50%}
+      .pagination li {width: 8px; height: 8px;}
+      .main_visual{width: 100vw; height: 100vh;}
+      .main_txt{width: 100%;}
+      .main_txt p {font-size: 1rem;}
+      .service_div {width: 80vw; margin: 50px auto;}
+      .service_div div{font-size: 1.5rem; width: 40%; height: 10%; margin-right: 5%; margin-bottom: 30px;}
+      .service_div div:nth-of-type(2){margin-right: 0;}
+      .service_div div:last-of-type{margin-right: 0;}
+      .background_img1{display: none;}
+      .movie_wrap{left: 5%;}
+      .movie_wrap h5{font-size: 1.8rem; line-height: 3rem;}
+      hr{display: none;}
+      .swiper-container{display: none;}
+      .movie_click{width: 100%; left:10%; margin-top: 20px;}
+      .movie_click img {width: 60%;}
+      .movie_background, .meet_background{display: none;}
+      .book_wrap{left: 5%;}
+      .book_wrap h5{font-size: 1.8rem; line-height: 3rem;}
+      .book_click{width: 100%; left:5%; margin-top: 20px;}
+      .book_click img {width: 70%;}
+      .book_background{display: none;}
+      .book_background2{display: none;}
+      .book_img{left: 5%; margin-top: 30px;}
+      .book_img div {margin:0}
+      .book_img1:last-of-type,.book_img2{display: none;}
+      .meet_wrap{left: 0;}
+      .meet_wrap h5{font-size: 1.8rem; line-height: 3rem;}
+      .meet_img2{display: none;}
+      .meet_click{width: 100%; left:5%; margin-top: 20px;}
+      .fund_wrap{left: 0;}
+      .fund_wrap h5{font-size: 1.8rem; line-height: 3rem;}
+      .fund_click{width: 100%; left:20%; margin-top: 20px;}
+      .fund_img{display: block;}
+      .meet_content_wrap,.fund_content_wrap{margin-top: 20px;}
+      .end_wrap{padding-top: 0; top:40%}
+      .end_wrap h5{font-size: 1.5rem; line-height: 2rem;}
    }

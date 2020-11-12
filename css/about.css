@@ -2,7 +2,8 @@
       background-color: #C19889;
       height: 1080px;
       position: relative;
-      z-index: -11;
+	z-index: -11;
+	width: 100vw;
 }
 
 .main_txt{
@@ -46,7 +47,8 @@ h4 span{font-weight: 700; color:#C19889;}
       right: -40px;
       z-index: -10;
       opacity: .2;
-      background-image: url('../img/about_back.png');
+	background-image: url('../img/about_back.png');
+	background-size: cover;
 }
 
 
@@ -236,23 +238,171 @@ h4 span{font-weight: 700; color:#C19889;}
 	opacity: .2;
 }
 
-/* PC , 테블릿 가로 (해상도 768px ~ 1023px)*/
-@media all and (min-width:768px) and (max-width:1023px) {
-	/*스타일입력*/
-     }
    
+@media all and (min-width:1024px) and (max-width:1444px) {
+	/*스타일입력*/
+	html{width: 100vw; overflow-x: hidden;}
+	body{width: 100vw; }
+	.main_visual{width: 100vw; height: 100vh;}
+	.main_txt{width: 90%; top:30%; left:10%}
+	.small_tit{font-size: 2rem;}
+	h3{font-size: 2.6rem;}
+	.background_img1{width: 100%; height:100%; right: 0;}
+	.design_concept{width: 90%; left:5%}
+	.design_tit{font-size: 2.5rem;}
+	.small_info{font-size: 1.3rem; line-height: 1.5rem;}
+	.concept_wrap{height: 200px;}
+	.concept_circle{width:270px;height: 270px; margin-right: 3%;margin-top: 50px;}
+	.concept_circle h5{font-size:1.5rem; margin:0; margin-top: 120px;}
+	.concept_circle p{display: none;}
+	.img_object{width: 30%; margin-top: 80px;}
+	.img_object img{width: 100%;}
+	.img_object2{width: 30%;}
+	.img_object2 img{width: 100%;}
+	.img_object3{width: 40%;}
+	.img_object3 img{width: 100%;}
+	.design_color{width: 90%; left:5%; margin-top: 550px;}
+	.color_wrap1{margin-top: 80px; height: 30%;}
+	.color_circle1,.color_circle2,.color_circle3,.color_circle4{width: 300px; height: 300px;}
+	.color_circle1 p,.color_circle2 p,.color_circle3 p,.color_circle4 p{font-size: 1.5rem; margin-top: 43%;}
+	.main_color, .sub_color {display: none;}
+	.design_logo{width: 90%; left:5%; margin-top: 80px;}
+	.logo_img{margin-top: 50px;}
+	.logo_img img{width: 80%; margin-left: 10%;}
+	.design_typo{width: 90%; left:5%}
+	.typo_wrap{margin-top: 80px; height: 30%;}
+	.sd, .nanum {float: none;}
+	.sd {margin-right:0; margin-bottom: 50px;}
+	.nanum {float: right;}
+	.sd h5, .nanum h5 {font-size: 2.5rem;}
+	.sd1, .sd2, .sd3, .nanum1, .nanum2, .nanum3, .sd p, .nanum p{font-size: 1.8rem;}
+	.design_icon{width: 90%; left:5%; margin-top: 380px;}
+	.design_icon img{width: 100%;}
+	.section3{height: 5300px;}
+     }
    /* 테블릿 세로 (해상도 768px ~ 1023px)*/
    @media all and (min-width:768px) and (max-width:1023px) {
 	/*스타일입력*/
+	html{width: 100vw; overflow-x: hidden;}
+	body{width: 100vw; }
+	.main_visual{width: 100vw; height: 100vh;}
+	.main_txt{width: 90%; top:30%; left:10%}
+	.small_tit{font-size: 2rem;}
+	h3{font-size: 2.6rem;}
+	.background_img1{width: 100%; height:100%; right: 0;}
+	.design_concept{width: 90%; left:5%}
+	.design_tit{font-size: 2.5rem;}
+	.small_info{font-size: 1.3rem; line-height: 1.5rem;}
+	.concept_wrap{height: 200px;}
+	.concept_circle{width:270px;height: 270px; margin-right: 3%;margin-top: 50px;}
+	.concept_circle h5{font-size:1.5rem; margin:0; margin-top: 120px;}
+	.concept_circle p{display: none;}
+	.img_object{width: 40%; margin-top: 80px;}
+	.img_object img{width: 100%;}
+	.img_object2{width: 30%;}
+	.img_object2 img{width: 100%;}
+	.img_object3{width: 40%;}
+	.img_object3 img{width: 100%;}
+	.design_color{width: 90%; left:5%; margin-top: 550px;}
+	.color_wrap1{margin-top: 80px; height: 30%;}
+	.color_circle1,.color_circle2,.color_circle3,.color_circle4{width: 300px; height: 300px;}
+	.color_circle1 p,.color_circle2 p,.color_circle3 p,.color_circle4 p{font-size: 1.5rem; margin-top: 43%;}
+	.main_color, .sub_color {display: none;}
+	.design_logo{width: 90%; left:5%; margin-top: 80px;}
+	.logo_img{margin-top: 50px;}
+	.logo_img img{width: 80%; margin-left: 10%;}
+	.design_typo{width: 90%; left:5%}
+	.typo_wrap{margin-top: 80px; height: 30%;}
+	.sd, .nanum {float: none;}
+	.sd {margin-right:0; margin-bottom: 50px;}
+	.nanum {float: right;}
+	.sd h5, .nanum h5 {font-size: 2.5rem;}
+	.sd1, .sd2, .sd3, .nanum1, .nanum2, .nanum3, .sd p, .nanum p{font-size: 1.8rem;}
+	.design_icon{width: 90%; left:5%; margin-top: 380px;}
+	.design_icon img{width: 100%;}
+	.section3{height: 5300px;}
      }
    
    /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
    @media all and (min-width:480px) and (max-width:767px) {
 	/*스타일입력*/
+	html{width: 100vw; overflow-x: hidden;}
+	body{width: 100vw; }
+	.main_visual{width: 100vw; height: 100vh;}
+	.main_txt{width: 90%; top:30%; left:10%}
+	.small_tit{font-size: 2rem;}
+	h3{font-size: 2.6rem;}
+	.background_img1{width: 100%; height:100%; right: 0;}
+	.design_concept{width: 90%; left:5%}
+	.design_tit{font-size: 2rem;}
+	.small_info{font-size: 1rem; line-height: 1.5rem;}
+	.concept_wrap{height: 200px;}
+	.concept_circle{width:200px;height: 200px; margin-right: 3%;margin-top: 50px;}
+	.concept_circle h5{font-size:1.5rem; margin:0; margin-top: 80px;}
+	.concept_circle p{display: none;}
+	.img_object{width: 40%;}
+	.img_object img{width: 100%;}
+	.img_object2{width: 30%;}
+	.img_object2 img{width: 100%;}
+	.img_object3{width: 40%;}
+	.img_object3 img{width: 100%;}
+	.design_color{width: 90%; left:5%}
+	.color_wrap1{margin-top: 80px; height: 30%;}
+	.color_circle1,.color_circle2,.color_circle3,.color_circle4{width: 250px; height: 250px;}
+	.color_circle1 p,.color_circle2 p,.color_circle3 p,.color_circle4 p{font-size: 1.5rem; margin-top: 43%;}
+	.main_color, .sub_color {display: none;}
+	.design_logo{width: 90%; left:5%; margin-top: 80px;}
+	.logo_img{margin-top: 50px;}
+	.logo_img img{width: 80%; margin-left: 5%;}
+	.design_typo{width: 90%; left:5%}
+	.typo_wrap{margin-top: 50px; height: 30%;}
+	.sd, .nanum {float: none;}
+	.sd {margin-right:0; margin-bottom: 30px;}
+	.sd h5, .nanum h5 {font-size: 2rem;}
+	.sd1, .sd2, .sd3, .nanum1, .nanum2, .nanum3, .sd p, .nanum p{font-size: 1.5rem;}
+	.design_icon{width: 90%; left:5%}
+	.design_icon img{width: 100%;}
+	.section3{height: 4500px;}
      }
    
    /* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
    @media all and (max-width:479px) { 
      /*스타일입력*/
-     
+	 html{width: 100vw; overflow-x: hidden;}
+	 body{width: 100vw; }
+	 .main_visual{width: 100vw; height: 100vh;}
+	 .main_txt{width: 90%; top:30%; left:10%}
+	 .small_tit{font-size: 2rem;}
+	 h3{font-size: 2.6rem;}
+	 .background_img1{width: 100%; height:100%; right: 0;}
+	 .design_concept{width: 90%; left:5%}
+	 .design_tit{font-size: 2rem;}
+	 .small_info{font-size: 1rem; line-height: 1.5rem;}
+	 .concept_wrap{height: 200px;}
+	 .concept_circle{width:100px;height: 100px; margin-right: 3%;margin-top: 50px;}
+	 .concept_circle h5{font-size:1.5rem; margin:0; margin-top: 30px;}
+	 .concept_circle p{display: none;}
+	 .img_object{width: 50%;}
+	 .img_object img{width: 100%;}
+	 .img_object2{width: 50%;}
+	 .img_object2 img{width: 100%;}
+	 .img_object3{width: 50%;}
+	 .img_object3 img{width: 100%;}
+	 .design_color{width: 90%; left:5%}
+	 .color_wrap1{margin-top: 80px; height: 30%;}
+	 .color_circle1,.color_circle2,.color_circle3,.color_circle4{width: 140px; height: 140px;}
+	 .color_circle1 p,.color_circle2 p,.color_circle3 p,.color_circle4 p{font-size: 1.5rem; margin-top: 33%;}
+	 .main_color, .sub_color {display: none;}
+	 .design_logo{width: 90%; left:5%; margin-top: 80px;}
+	 .logo_img{margin-top: 50px;}
+	 .logo_img img{width: 100%;}
+	 .design_typo{width: 90%; left:5%}
+	 .typo_wrap{margin-top: 50px; height: 30%;}
+	 .sd, .nanum {float: none;}
+	 .sd {margin-right:0; margin-bottom: 30px;}
+	 .sd h5, .nanum h5 {font-size: 1.6rem;}
+	 .sd1, .sd2, .sd3, .nanum1, .nanum2, .nanum3, .sd p, .nanum p{font-size: 1.3rem;}
+	 .design_icon{width: 90%; left:5%}
+	 .design_icon img{width: 100%;}
+	 .section3{height: 4000px;}
    }

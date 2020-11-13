@@ -6,7 +6,7 @@ html, body {
       box-sizing: border-box;
     }
 
-    .title{position: absolute; top:15%; left:3%;color:#fff;}
+    .title{position: absolute; top:10%; left:3%;color:#fff; display: none;}
     .title h2 { font-size: 2rem; font-weight: 700;}
     .no-scroll {
       overflow: hidden;

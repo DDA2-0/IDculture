@@ -320,6 +320,7 @@ width: 35px;
       body{width: 100vw; }
       article{width: 100%; height: 100%;}
       .pagination{right: 5px; top:50%}
+      .small_tit{padding-top: 50%;}
       .pagination li {width: 8px; height: 8px;}
       .main_visual{width: 100vw; height: 100vh;}
       .main_txt{width: 100%;}
@@ -367,6 +368,7 @@ width: 35px;
       .main_visual{width: 100vw; height: 100vh;}
       .main_txt{width: 100%;}
       .main_txt p {font-size: 1.7rem;}
+      .small_tit{padding-top: 50%;}
       .service_div {width: 80vw; margin: 50px auto;}
       .service_div div{font-size: 1.5rem; width: 20%; height: 10%; margin-right: 5%; margin-bottom: 30px;}
       .service_div div:last-of-type{margin-right: 0;}
@@ -407,6 +409,7 @@ width: 35px;
       body{width: 100vw; }
       article{width: 100%; height: 100%;}
       .pagination{right: 5px; top:50%}
+      .small_tit{padding-top: 50%;}
       .pagination li {width: 8px; height: 8px;}
       .main_visual{width: 100vw; height: 100vh;}
       .main_txt{width: 100%;}

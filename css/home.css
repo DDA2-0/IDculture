@@ -282,18 +282,17 @@ color:#482D23;
 }
 
 #card1 {
-transform: rotate(-15deg);
+transform: rotate(15deg);
 opacity: .43;
 position: absolute;
 top:180px;
-left: -120px;
+left: -20px;
 }
 #card2 {
-transform: rotate(15deg);
 opacity: .40;
 position: absolute;
 top:77px;
-right: -54px;
+right: -20px;
 }
 
 .learn_more{

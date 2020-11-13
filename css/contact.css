@@ -1,52 +1,126 @@
-body{
-      background-color: #C19889;
-}
-
-.contact-box{
-      width: 1250px;
-      margin: 150px auto;
+html, body {
+      font-family: 'Nanum Myeongjo', serif;
+    }
+    
+    *, *::before, *::after {
       box-sizing: border-box;
-      overFlow : auto;
-}
-.contact-box h4{font-size: 40px; color:#fff; margin-bottom: 150px;}
+    }
 
-.contact-box ul li {float: left;margin-right: 160px; }
-.contact-box ul li:last-child{margin-right: 0;}
-.member{
-      width: 450px;
-      padding:40px;
-      margin-bottom: 50px;
-      border: 1px solid #E1E1E1;
-      border-radius: 50px 50px 50px 0;
-      color:#fff;
-      background-color: #8d655788;
-}
+    .title{position: absolute; top:15%; left:3%;color:#fff;}
+    .title h2 { font-size: 2rem; font-weight: 700;}
+    .no-scroll {
+      overflow: hidden;
+    }
+    
+    .container {
+      background: #C19889;
+      padding: 2em;
+      min-height: 100vh;
+      display: -webkit-box;
+      display: flex;
+    }
+    
+    .icon {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      stroke-width: 0;
+      stroke: currentColor;
+      fill: currentColor;
+    }
+    
+    .blend-image, .card__background img {
+      -webkit-filter: brightness(250%) grayscale(100%);
+              filter: brightness(250%) grayscale(100%);
+      mix-blend-mode: screen;
+    }
+    
+    .center-image, .card__background img {
+      width: 100%;
+      min-height: 100%;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      -o-object-fit: cover;
+         object-fit: cover;
+    }
+    
+    .slick-slide {
+      padding: 2em .5em;
+    }
+    
+    .card-slider {
+      margin: auto;
+      width: 100%;
+    }
+    .card-wrapper{cursor: pointer;}
+    .card {
+      background: #fff;
+      display: -webkit-box;
+      display: flex;
+      padding: 2em;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      -webkit-box-align: start;
+              align-items: flex-start;
+      -webkit-box-pack: end;
+              justify-content: flex-end;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+      height: 350px;
+      box-shadow: 0 30px 50px -25px rgba(0, 0, 0, 0.25);
+    }
+    .card > * {
+      -webkit-transition: opacity 350ms;
+      transition: opacity 350ms;
+    }
+    .card--opened > * {
+      opacity: 0;
+    }
+    
+    .card__background {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+      background: #ebc2b2;
+      z-index: -1;
+      text-align: left;
+    }
+    .card__background::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    
+    .card__category {
+      text-transform: uppercase;
+      color: #fff;
+      background:#c99079;
+      font-size: 0.85em;
+      font-weight: 600;
+      padding: 0.2em 0.5em 0.25em;
+    }
+    
+    .card__title {
+      text-transform: uppercase;
+      margin: 0.3em 0;
+      color: #583e33;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+    
+    .card__duration {
+      color: #6f7070;
+    }
+    
 
-
-   
-   /* 테블릿 세로 (해상도 768px ~ 1023px)*/
-   @media all and (min-width:768px) and (max-width:1023px) {
-      /*스타일입력*/
-      .contact-box{width: 100vw;}
-      .contact-box ul li{margin-right:0;}
-      .member{width: 80%; margin:50px auto; display: flex;}
-      .member img{width: 100%;}
-     }
-   
-   /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
-   @media all and (min-width:480px) and (max-width:767px) {
-      /*스타일입력*/
-      .contact-box{width: 100vw;}
-      .contact-box ul li{margin-right:0;}
-      .member{width: 80%;}
-      .member img{width: 100%;}
-     }
-   
-   /* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
-   @media all and (max-width:479px) { 
-     /*스타일입력*/
-     .contact-box{width: 100vw;}
-     .contact-box ul li{margin-right:0;}
-     .member{width: 80%;}
-     .member img{width: 100%;}
-   }

@@ -332,26 +332,28 @@ width: 35px;
       .movie_wrap h5{font-size: 1.8rem; line-height: 3rem;}
       hr{display: none;}
       .swiper-container{display: none;}
-      .movie_click{width: 100%; left:20%; top:80%;}
+      .movie_click{width: 100%; margin-top:30px; display: flex; flex-wrap: wrap; justify-content: center;}
       .movie_background, .meet_background{display: none;}
       .book_wrap{left:10%;}
       .book_wrap h5{font-size: 1.8rem; line-height: 3rem;}
-      .book_click{width: 100%; margin-top: 70px;}
+      .book_click{width: 100%;margin-top: 20px;  display: flex; flex-wrap: wrap; justify-content: center;}
       .book_background{display: none;}
       .book_background2{display: none;}
       .book_img{left: 10%; margin-top: 30px;}
       .book_img div {margin:0}
       .book_img1:last-of-type,.book_img2{display: none;}
+      .meet_img2{display: none;}
       .meet_wrap{left: 0;}
       .meet_wrap h5{font-size: 1.8rem; line-height: 3rem;}
-      .meet_click{width: 100%; left:5%; margin-top: 70px;}
+      .meet_content_wrap{width: 100%;}
+      .meet_click{width: 100%; margin-top: 20px; display: flex; flex-wrap: wrap; justify-content: center;}
       .fund_wrap{left: 0;}
       .fund_wrap h5{font-size: 1.8rem; line-height: 3rem;}
       .fund_content_wrap{width: 100%;}
-      .fund_click{width: 100%; margin-top: 70px;}
+      .fund_click{width: 100%; margin-top: 20px;}
       .meet_content_wrap,.fund_content_wrap{margin-top: 20px;}
       .end_wrap{padding-top: 0; top:40%}
-      .end_wrap h5{font-size: 1.5rem; line-height: 2rem;}
+      .end_wrap h5{font-size: 1.5rem; line-height: 2rem;}.drag{display: none;}
      }
    
    /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
@@ -371,21 +373,24 @@ width: 35px;
       .background_img1{display: none;}
       .movie_wrap{left: 5%;}
       .movie_wrap h5{font-size: 1.8rem; line-height: 3rem;}
+      .drag{display: none;}
       hr{display: none;}
       .swiper-container{display: none;}
-      .movie_click{width: 100%; left:30%; top:77%; margin-top: 20px;}
+      .movie_click{width: 100%; margin-top:30px; display: flex; flex-wrap: wrap; justify-content: center;}
       .movie_background, .meet_background{display: none;}
       .book_wrap{left: 5%;}
       .book_wrap h5{font-size: 1.8rem; line-height: 3rem;}
-      .book_click{width: 100%; left:20%; top:30%; margin-top: 20px;}
+      .book_click{width: 100%;margin-top: 20px;  display: flex; flex-wrap: wrap; justify-content: center;}
       .book_background{display: none;}
       .book_background2{display: none;}
       .book_img{left: 5%; margin-top: 30px;}
       .book_img div {margin:0}
       .book_img1:last-of-type,.book_img2{display: none;}
+      .meet_img2{display: none;}
       .meet_wrap{left: 0;}
       .meet_wrap h5{font-size: 1.8rem; line-height: 3rem;}
-      .meet_click{width: 100%; left:5%; margin-top: 20px;}
+      .meet_content_wrap{width: 100%;}
+      .meet_click{width: 100%; margin-top: 20px; display: flex; flex-wrap: wrap; justify-content: center;}
       .fund_wrap{left: 0;}
       .fund_wrap h5{font-size: 1.8rem; line-height: 3rem;}
       .fund_content_wrap{width: 100%;}
@@ -412,16 +417,17 @@ width: 35px;
       .service_div div:last-of-type{margin-right: 0;}
       .background_img1{display: none;}
       .movie_wrap{left: 5%;}
+      .drag{display: none;}
       .movie_wrap h5{font-size: 1.8rem; line-height: 3rem;}
       hr{display: none;}
       .swiper-container{display: none;}
-      .movie_click{width: 100%; left:10%; margin-top: 20px;}
+      .movie_click{width: 100%; margin-top:30px; display: flex; flex-wrap: wrap; justify-content: center;}
       .movie_click img {width: 60%;}
       .movie_background, .meet_background{display: none;}
       .book_wrap{left: 5%;}
       .book_wrap h5{font-size: 1.8rem; line-height: 3rem;}
-      .book_click{width: 100%; left:5%; margin-top: 20px;}
-      .book_click img {width: 70%;}
+      .book_click{width: 100%;margin-top: 20px;  display: flex; flex-wrap: wrap; justify-content: center;}
+      .book_click img {width: 60%;}
       .book_background{display: none;}
       .book_background2{display: none;}
       .book_img{left: 5%; margin-top: 30px;}
@@ -430,12 +436,14 @@ width: 35px;
       .meet_wrap{left: 0;}
       .meet_wrap h5{font-size: 1.8rem; line-height: 3rem;}
       .meet_img2{display: none;}
-      .meet_click{width: 100%; left:5%; margin-top: 20px;}
+      .meet_content_wrap{width: 100%;}
+      .meet_click{width: 100%; margin-top: 20px; display: flex; flex-wrap: wrap; justify-content: center;}
       .fund_wrap{left: 0;}
       .fund_wrap h5{font-size: 1.8rem; line-height: 3rem;}
-      .fund_click{width: 100%; left:20%; margin-top: 20px;}
-      .fund_img{display: block;}
+      .fund_content_wrap{width: 100%;}
+      .fund_click{width: 100%; margin-top: 20px;}
       .meet_content_wrap,.fund_content_wrap{margin-top: 20px;}
       .end_wrap{padding-top: 0; top:40%}
       .end_wrap h5{font-size: 1.5rem; line-height: 2rem;}
+      
    }
